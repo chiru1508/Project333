@@ -9,6 +9,7 @@ import { EmpDisplayComponent } from './emp-display/emp-display.component';
 import { EmpEditComponent } from './emp-edit/emp-edit.component';
 import { EmpAddComponent } from './emp-add/emp-add.component';
 import { EmpDeleteComponent } from './emp-delete/emp-delete.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { EmpDeleteComponent } from './emp-delete/emp-delete.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
