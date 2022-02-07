@@ -34,6 +34,8 @@ export class RegisterComponent implements OnInit {
     }
     signup(){
       console.log(this.regForm.value)
+      localStorage.setItem('email',JSON.stringify(this.regForm.value.uemail))
+      localStorage.setItem('Password',this.regForm.value.upass)
     }
   constructor() { }
 
