@@ -1,21 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-emp-add',
   templateUrl: './emp-add.component.html',
   styleUrls: ['./emp-add.component.css']
 })
-export class EmpAddComponent implements OnInit {
+export class EmpAddComponent implements OnInit 
+{
 
-  import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-
-@Component({
-  selector: 'app-add',
-  templateUrl: './add.component.html',
-  styleUrls: ['./add.component.css']
-})
-export class AddComponent implements OnInit {
 firstName:any= "^[a-zA-Z0-9]+$";
 design:any="^[a-zA-Z0-9]+$";
 
@@ -54,16 +47,9 @@ add(){
 }
 
 
-  constructor() { 
+ constructor() { } 
 
- 
-      
-    }
-  
-
-  ngOnInit(): void {
-    
-  }
+ ngOnInit(): void {}
 
 }
 
