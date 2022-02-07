@@ -29,5 +29,7 @@ get pass(){
 sign()
 {
   console.log(this.loginForm.value)
+  localStorage.setItem("Email",JSON.stringify(this.loginForm.value.email))
+  localStorage.setItem("Password",this.loginForm.value.pass)
 }
 }
